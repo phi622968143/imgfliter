@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>image effect</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- jQuery import -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-toBlob/3.0.0/canvas-toBlob.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/ui-darkness/jquery-ui-1.10.4.custom.min.css"> -->
+</head>
+
+<div>selectImgFile</div>
+<div><input type="file" id="upload"></div>
+
+<ul>
+    <li><input type="radio" name="effect" value="reset" id="reset">
+        <label for="reset">reset</label></li>
+    <li><input type="radio" name="effect" value="monochrome" id="monochrome">
+        <label for="monochrome">mono</label></li>
+    <li><input type="radio" name="effect" value="sepia" id="sepia">
+        <label for="sepia">back</label></li>
+    <li><input type="radio" name="effect" value="reverse" id="reverse">
+        <label for="reverse">reverse</label></li>
+    <li> <button id="save" class="btnSave">save</button></li>
+</ul>
+<!-- <div id="briteness"></div> -->
+<div id="viewArea">
+    <canvas id="fileCv"></canvas>
+</div>
+
+<script src="js/main.js"></script>
